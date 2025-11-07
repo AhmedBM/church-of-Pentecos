@@ -26,6 +26,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.DEPLOYMENT_TOKEN }}
           repo_token: ${{ github.token }} # Used for GitHub integrations (i.e., PR comments)
           action: "upload"
+          skip_app_build: true
           app_location: "/"  # or "/" if files are in root
           api_location: ""          # optional
-          output_location: ""       # optional
+          # output_location: ""       # optional
